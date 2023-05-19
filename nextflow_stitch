@@ -23,7 +23,7 @@ if (params.help) {
 }
 
 process run_script {
-    container 'nf_stitch.sif'
+    container '/stornext/Img/data/prkfs1/m/Microscopy/BAC_Conda_envs/nextflow_containers/nf_stitch.sif'
 
     //Resource Requirements
     cpus 12
