@@ -1,0 +1,15 @@
+Bootstrap: docker
+From: continuumio/miniconda3:latest
+
+%files 
+    environment.yml /environment.yml
+
+%post
+    echo "Installing conda env"
+    . /opt/conda/etc/profile.d/conda.sh
+    conda env create -f /environment.yml
+
+%runscript
+    . /opt/conda/etc/profile.d/conda.sh    
+    conda activate nf_stitch
+    exec "$@"
