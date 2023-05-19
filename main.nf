@@ -1,7 +1,7 @@
 #!/usr/bin/env nextflow
 
 // Define parameters
-params.py_script = "Stitch_HALO_final.py" // The path to your Python script
+params.py_script = "/home/users/allstaff/whitehead/nexflow_halo_stitch/Stitch_HALO_final.py" // The path to your Python script
 params.input_path = "" // The path to your input data
 params.help = false
 
